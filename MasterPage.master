@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 99%;
+            height: 968px;
+        }
+        .style2
+        {
+            height: 459px;
+        }
+        .style4
+        {
+            height: 459px;
+            width: 250px;
+        }
+        .style6
+        {
+            height: 459px;
+            width: 980px;
+        }
+        .style10
+        {
+            width: 250px;
+            height: 49px;
+        }
+        .style11
+        {
+            width: 980px;
+            height: 49px;
+            font-weight: 700;
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+        }
+        .style12
+        {
+            height: 49px;
+        }
+        .style13
+        {
+            width: 250px;
+            height: 38px;
+        }
+        .style14
+        {
+            width: 980px;
+            height: 38px;
+            background-color: #CCCCCC;
+            color: #993333;
+            font-family: "Blue Highway Linocut";
+        }
+        .style15
+        {
+            height: 38px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style10">
+            </td>
+            <td class="style11">
+                <asp:Image ID="Image1" runat="server" Height="140px" 
+                    ImageUrl="~/images/logo.jpg" Width="153px" />
+                <br />
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" 
+                    style="z-index: 2; left: 1014px; top: 117px; position: absolute; width: 223px" 
+                    Text="Label"></asp:Label>
+            </td>
+            <td class="style12">
+            </td>
+        </tr>
+        <tr>
+            <td class="style4">
+            
+            </td>
+            <td class="style6" >
+            <div style="width: 100%; height: 750px;">
+                <asp:ContentPlaceHolder ID="Maincontent" runat="server">
+                    <p>
+                        <br />
+                    </p>
+                    <p>
+                        &nbsp;</p>
+                </asp:ContentPlaceHolder>
+                </div>
+            </td>
+            <td class="style2">
+            
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="style13">
+            </td>
+            <td class="style14">
+                Powered By Planit Consults &#169 2014</td>
+            <td class="style15">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
